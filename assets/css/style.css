@@ -17,6 +17,15 @@ header {
     font-weight: bold;
 }
 
+header a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+header div p {
+    display: inline;
+}
+
 main {
     margin: 0 250px 0 250px;
     text-align: center;
@@ -42,7 +51,4 @@ main button {
     font-weight: bold;
 }
 
-header a {
-    text-decoration: none;
-    color: cornflowerblue;
-}
+
