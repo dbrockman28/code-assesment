@@ -1,5 +1,8 @@
 let startButton = document.querySelector("#start-quiz");
 let pageContent = document.querySelector("#page-content");
+let introTitle = document.querySelector("#quiz-intro-title");
+let intro = document.querySelector("#quiz-intro");
+
 let time = document.querySelector("#time");
 let countdown = 100;
 let quiz = [
@@ -21,13 +24,20 @@ let quiz = [
 ]
 
 let quizStart = function() {
-    pageContent.remove();
+    intro.remove();
+    introTitle.remove();
+    startButton.remove();
     startCountdown();
+
     let question1 = quiz[0].question;
     let questionEl = document.createElement("h1");
+    questionEl.className = "question";
     questionEl.innerText = question1;
     pageContent.appendChild(questionEl);
-    console.log(questionEl);
+    let answers1 = quiz[0].answers;
+    for (i = 0; i < answers1.length; i++) {
+        console.log(answers1[i])
+    }
 };
 
 let startCountdown = function() {

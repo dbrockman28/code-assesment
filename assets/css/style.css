@@ -51,4 +51,8 @@ main button {
     font-weight: bold;
 }
 
-
+.question {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto;
+}
